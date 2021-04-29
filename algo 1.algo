@@ -1,0 +1,26 @@
+ALGRITHM three 
+ALGORITHM ex1_algo1
+VAR
+    phr:string;// une phrase
+    nb_spaces:=0;//Nombre des espaces
+    nb_voyelles:=0// Nbre des voyelles
+    nb_cara:=0;//Nbre des caractères
+    c: CHAR
+    i:integer;
+
+BEGIN
+WHILE (c<>".") DO
+   write("donnez un caractère");
+   read(c);
+   nbr_cara:=nbr_cara+1;
+ IF (c=" ") THEN
+   nb_spaces:=nb_spaces+1;
+ END_IF
+ IF (c='a')or (c='e') or (c='y') or (c='u') or (c='i') or(c='o') THEN
+   nb_voyelles:=nb_voyelles+1;
+ END_IF
+END_WHILE
+    write(nb_voyelles);
+    write(nbr_cara);
+    write(nb_spaces);
+END
